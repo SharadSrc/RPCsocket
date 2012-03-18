@@ -1,0 +1,19 @@
+1>> compiling the .x file with rpcgen
+	
+	rpcgen ll.x
+
+2>> compiling the server file
+
+	cc -o server llservice.c ll_svc.c ll_xdr.c
+
+3>> compiling the client file
+
+	cc -o client llclient.c ll_clnt.c ll_xr.c
+
+4>> running the server
+
+	./server
+
+5>> running the client
+
+	./client <server ip> <input data elements>
